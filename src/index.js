@@ -107,14 +107,13 @@ const CollapsingPage = ({ destroy, duration, onFinish, children }) => {
 };
 
 CollapsingPage.propTypes = {
-  destroy: PropTypes.bool,
+  destroy: PropTypes.bool.isRequired,
   duration: PropTypes.number,
   onFinish: PropTypes.func,
   children: PropTypes.node
 };
 
 CollapsingPage.defaultProps = {
-  destroy: false,
   duration: 8000,
   onFinish: () => {},
   children: null

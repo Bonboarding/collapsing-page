@@ -1,10 +1,10 @@
-# collapsing-page
+# Collapsing Page effect
 
-> A React library to animate the DOM elements in a collapsing manner
+> Collapsing page effect on your website
 
-[![NPM](https://img.shields.io/npm/v/collapsing-page.svg)](https://www.npmjs.com/package/collapsing-page) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+<img width="460" alt="Collapsing Page Effect" src="https://bonboarding.fra1.digitaloceanspaces.com/collapsing-page/header.png">
 
-## Install
+## Installation
 
 ```bash
 npm install --save collapsing-page
@@ -13,18 +13,45 @@ npm install --save collapsing-page
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { useState } from 'react';
+import CollapsingPage from 'collapsing-page';
 
-import MyComponent from 'collapsing-page'
-import 'collapsing-page/dist/index.css'
+const Example = () => {
+  const [destroy, setDestroy] = useState(false);
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+  return (
+    <>
+      <button type="button" onClick={() => setDestroy(true)}>
+        Destroy page
+      </button>
+
+      <CollapsingPage destroy={destroy}>
+        <div className="after-collapse">
+          <h1>This will stay when everything else's gone</h1>
+        </div>
+      </CollapsingPage>
+    </>
+  );
+};
 ```
+
+The children of the `CollapsingPage` component will stay visible after the collapse.
+
+**⚠️ Note:** to keep the children visible after the collapse, set their position to `fixed` and a `z-index: -1` to make it look cool.
+
+You can find a fully-working example in the `example` folder.
+
+## Props
+
+The only prop that's required is `destroy` which is a boolean.  
+Once it's changing to `true`, the collapse effect starts animating.
+
+| name     | type                 | description                                                             |
+| -------- | -------------------- | ----------------------------------------------------------------------- |
+| destroy  | boolean **required** | setting it to true triggers the collapsing animation                    |
+| duration | number               | the maximum duration of the animation in milliseconds (8000 by default) |
+| onFinish | function             | a callback function that is executed when the animation is over         |
 
 ## License
 
-MIT © [bonboarding](https://github.com/bonboarding)
+MIT © [Bonboarding](https://github.com/bonboarding)
