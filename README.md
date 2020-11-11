@@ -1,8 +1,6 @@
-# Collapsing Page effect
+<img width="460" alt="Collapsing Page Effect" src="https://bonboarding.fra1.digitaloceanspaces.com/collapsing-page/header.png">
 
 > Collapsing page effect on your website
-
-<img width="460" alt="Collapsing Page Effect" src="https://bonboarding.fra1.digitaloceanspaces.com/collapsing-page/header.png">
 
 ## Installation
 
