@@ -1,14 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  padding: 0;
+  font-weight: 900;
+}
+
+.after-collapse {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #454545;
+}
+
+.after-collapse h1 {
+  color: #ffffff;
+}
+
+.page {
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #675072;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.25rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.3),
+    0 1px 3px 1px rgba(255, 255, 255, 0.3), 0 -1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header nav {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header nav ul li {
+  display: inline-block;
+}
+
+.header nav ul li:last-child {
+  margin-left: auto;
+}
+
+.header nav a {
+  display: block;
+  padding: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 900;
+  border: none;
+  background-color: transparent;
+  transition: all 300ms ease-in-out;
+}
+
+.header nav a:hover {
+  transform: translateY(-5px);
+}
+
+.header nav button {
+  margin: 1rem 0;
+  padding: 1rem;
+  text-decoration: none;
+  color: #46344e;
+  font-weight: 900;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #faed26;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.header nav button:hover {
+  transform: translateY(-5px);
+}
+
+.content {
+  margin: 2rem auto;
+  max-width: 900px;
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  padding: 1rem;
+  background-color: #715f61;
+  color: #ffffff;
+  margin-left: auto;
+  border-radius: 0.25rem;
+}
+
+.articles {
+  margin-right: 1rem;
+}
+
+.articles article {
+  padding: 1rem;
+  background-color: #ecebed;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.articles article a {
+  color: #454545;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #666666;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
 }
