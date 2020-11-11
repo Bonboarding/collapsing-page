@@ -1,7 +1,7 @@
 {
   "name": "collapsing-page",
   "version": "1.0.0",
-  "description": "A React library to animate the DOM elements in a collapsing manner",
+  "description": "Collapsing page effect on your website",
   "author": "bonboarding",
   "license": "MIT",
   "repository": "bonboarding/collapsing-page",
