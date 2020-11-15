@@ -2,6 +2,10 @@
 
 > Collapsing page effect on your website
 
+<img alt="Collapsing Page Effect demonstration" src="https://bonboarding.fra1.digitaloceanspaces.com/collapsing-page/collapse.gif">
+
+Or try it here, by clicking on the **Logout** button
+
 ## Installation
 
 ```bash
