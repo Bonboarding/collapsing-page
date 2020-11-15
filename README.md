@@ -4,7 +4,7 @@
 
 <img alt="Collapsing Page Effect demonstration" src="https://bonboarding.fra1.digitaloceanspaces.com/collapsing-page/collapse.gif">
 
-Or try it here, by clicking on the **Logout** button
+👀 Or [try it yourself](https://htmlpreview.github.io/?https://github.com/Bonboarding/collapsing-page/blob/main/example/build/index.html), by clicking on the **Logout** button in the demo page.
 
 ## Installation
 
