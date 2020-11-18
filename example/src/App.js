@@ -6,7 +6,7 @@ import 'collapsing-page/dist/index.css';
 import logo from './logo.png';
 
 const App = () => {
-  const [destroy, setDestroy] = useState(false);
+  const [collapse, setCollapse] = useState(false);
 
   return (
     <>
@@ -27,7 +27,7 @@ const App = () => {
                 <a href="#settings">Settings</a>
               </li>
               <li>
-                <button type="button" onClick={() => setDestroy(true)}>
+                <button type="button" onClick={() => setCollapse(true)}>
                   Logout
                 </button>
               </li>
@@ -84,10 +84,10 @@ const App = () => {
         </div>
 
         <footer>
-          <p>2020</p>
+          <p>{new Date().getFullYear()}</p>
         </footer>
       </div>
-      <CollapsingPage destroy={destroy}>
+      <CollapsingPage collapse={collapse}>
         <div className="after-collapse">
           <h1>This will stay when everything else's gone</h1>
         </div>
