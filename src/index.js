@@ -26,7 +26,7 @@ const CollapsingPage = ({ collapse, duration, onFinish, children }) => {
 
       const elements = document.querySelectorAll('body > *, body div');
 
-      [...elements].forEach((element) => {
+      [].forEach.call(elements, (element) => {
         if (element.getAttribute('data-original-values')) {
           const originalValues = JSON.parse(
             element.getAttribute('data-original-values')
@@ -88,7 +88,7 @@ export const collapsePage = (params = {}) => {
   let maxDuration = 0;
 
   // Loop through all elements that will be animated
-  [...elements].forEach((element) => {
+  [].forEach.call(elements, (element) => {
     // Ignore the content and its children, that will stay on screen after the logout
     if (element === excludedElement || isDescendant(excludedElement, element)) {
       element.style.pointerEvents = 'all';
