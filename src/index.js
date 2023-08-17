@@ -139,6 +139,10 @@ export const collapsePage = (params = {}) => {
  * @param DOMElement child
  */
 const isDescendant = (parent, child) => {
+  if (!child || !child.parentNode) {
+    return false;
+  }
+
   let node = child.parentNode;
   while (node !== null) {
     if (node === parent) {
